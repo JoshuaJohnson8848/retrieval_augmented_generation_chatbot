@@ -60,7 +60,7 @@ app.post("/search", async (req, res) => {
     if (filtered.length === 0) {
         return res.json({
             status: true,
-            answer: "I don’t have enough information to answer that right now. You can help me by feeding more details"
+            answer: "I’m unable to answer that at the moment. Please ask only about Inter Smart Solution Private Limited."
         });
     }
 

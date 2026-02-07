@@ -10,7 +10,7 @@ export const embed = async (text) => {
                 prompt: text,
             })
         });
-        
+
         const json = await res.json();
         return json.embedding;
 
@@ -31,8 +31,8 @@ export const answer = async (context, question) => {
 
             TASK:
             Answer the question using ONLY the CONTEXT.
-            If the answer does not exist in CONTEXT, reply exactly:
-            I don’t have enough information to answer that right now. You can help me by feeding more details
+            If the answer does not exist in CONTEXT, reply exactly like this, don't add anything:
+            I’m unable to answer that at the moment. Please ask only about Inter Smart Solution Private Limited.
 
             ANSWER:
         `;
